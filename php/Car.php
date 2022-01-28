@@ -6,4 +6,12 @@
         public $driver;
         public $passenger;
 
+        public function __construct($license, $driver){
+            $this->license = $license;
+            $this->driver = $driver;
+        }
+
+        public function PrintDataCar(){
+            echo "license: $this->license, Conductor: {$this->driver->name}";
+        }
     }
