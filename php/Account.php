@@ -10,4 +10,7 @@
             $this->name = $name ;
             $this->document = $document;
         }
+        public function printDataAccount(){
+            echo "Driver: $this->name, Document: $this->document";
+        }
     }
